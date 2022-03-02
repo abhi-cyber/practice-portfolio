@@ -5,16 +5,10 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
+  
+  --first-hue: 207;
+  --sat: 90%;
+  --lig: 72%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
@@ -259,6 +253,7 @@ img {
 
 .home__img{
   width: 160px;
+  
 }
 
 .home__handle{
@@ -458,14 +453,62 @@ img {
   font-size: var(--tiny-font-size);
 }
 
-/*=============== SERVICES ===============*/
+/*=============== QUALIFICATIONS ===============*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+}
 
+#qualification__edu{
+  text-align: center;
+}
 
-/* Services modal */
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
 
+.qualification__icon{
+  font-size: 1.8rem;
+}
 
-/*Active modal*/
+.qualification__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
 
+.qualification__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+}
+
+.qualification__calender{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification__line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
 
 /*=============== WORK ===============*/
 .work__container{
@@ -702,7 +745,6 @@ img {
   }
 
   .contact__container{
-    grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 3rem;
   }
