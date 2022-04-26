@@ -251,23 +251,27 @@ img {
   font-size: var(--biggest-font-size);
 }
 
+.home__handle img{
+  width: 100%;
+}
 .home__img{
-  width: 160px;
-  
+  width: inherit;
+  /* position: absolute; */
 }
 
 .home__handle{
   justify-self: center;
   width: 190px;
   height: 293px;
+  /* position: relative; */
   background: linear-gradient(180deg,
               hsla(var(--first-hue), var(--sat), var(--lig), 1),
               hsla(var(--first-hue), var(--sat), var(--lig), .2)
             );
   border-radius: 10rem 10rem 1rem 1rem;
-  display: flex;
+  /* display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: center; */
   overflow: hidden;
 }
 
